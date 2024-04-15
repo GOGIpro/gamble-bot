@@ -1,0 +1,228 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable id="A7!mFt,$a9je|v8[uyKr">gamble</variable>
+  </variables>
+  <block type="jg_event_message_when_a_message_is_recieved_and_author_isnt_a_bot" id="MpQoSMgd!,6GC|L/#*id" x="434" y="529">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="avI{)XfI::9ma28F8mUx">
+        <value name="IF0">
+          <block type="logic_compare" id="1BE|)1zBg?;QC?WcZ)jD">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="7BWqZ.|/!72S{5UB,[+N"></block>
+            </value>
+            <value name="B">
+              <block type="jg_text_remake_paragraph_quotes" id="9/ThUD!4QZHfSyM@]=OH">
+                <field name="TEXT">/lošti</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="variables_set" id="Y|i)3|/tg5U@/y$(P[NQ">
+            <field name="VAR" id="A7!mFt,$a9je|v8[uyKr">gamble</field>
+            <value name="VALUE">
+              <block type="math_random_int" id="y]]|Qv6wFHo_a|W4VRpj">
+                <value name="FROM">
+                  <block type="math_number" id="fF%cNKv4X?#Lof${*$p$">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+                <value name="TO">
+                  <block type="math_number" id="tV!8*,5!fQIl]rf=FFnw">
+                    <field name="NUM">3</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+        <next>
+          <block type="controls_if" id="3.|LwQao()e5W:$:$`l|">
+            <value name="IF0">
+              <block type="logic_compare" id="Ngqa-?)jj3Wa{dyfE%rF">
+                <field name="OP">EQ</field>
+                <value name="A">
+                  <block type="variables_get" id="wVp=.-e?!+)n?E{]-+P,">
+                    <field name="VAR" id="A7!mFt,$a9je|v8[uyKr">gamble</field>
+                  </block>
+                </value>
+                <value name="B">
+                  <block type="math_number" id="z[7X.ss7uLX#w.1n,+q2">
+                    <field name="NUM">1</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <statement name="DO0">
+              <block type="s4d_reply" id="N`MuhvIAk!HW_t/#E=*B">
+                <value name="CONTENT">
+                  <shadow type="text" id="B?T4^W[K7yVgfwm-*9CZ">
+                    <field name="TEXT">Tikiuosi laimėsi... ||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _ https://tenor.com/view/gamble-gif-6622634392102519877</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="s4d_wait_seconds" id="OtL^E4XlO|=dzGbc74|o">
+                    <value name="TIME">
+                      <shadow type="math_number" id="%SbDvJ,TWy)TXIYZ-P~S">
+                        <field name="NUM">5</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="s4d_reply" id="|,}0HdsvI}:kW^dO+u:z">
+                        <value name="CONTENT">
+                          <shadow type="text" id="F1{mWHjs41hw(ih.S7oY">
+                            <field name="TEXT">Laimėjai!</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="controls_if" id="7/cow#LhHMKf(o{rWz{8">
+                <value name="IF0">
+                  <block type="logic_compare" id="D_Ta:~ods9Z0G)4!(9Ol">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="variables_get" id="o3Vu+)Xj6hf(.5y,%o#1">
+                        <field name="VAR" id="A7!mFt,$a9je|v8[uyKr">gamble</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <block type="math_number" id="fGs$yTb^g{PC}q+a)_]U">
+                        <field name="NUM">2</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="s4d_reply" id="/tb.qpqy6-3kVYDPIxRk">
+                    <value name="CONTENT">
+                      <shadow type="text" id="X#6G8pcJ!VN##2sJq{Cp">
+                        <field name="TEXT">Tikiuosi laimėsi...||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _  https://tenor.com/view/ga-ble-gif-1917603139337710711</field>
+                      </shadow>
+                    </value>
+                    <next>
+                      <block type="s4d_wait_seconds" id="N}Zk[@`QQ2^r|?_CdHg1">
+                        <value name="TIME">
+                          <shadow type="math_number" id="Y=n%D!5^N:$l:PN~O--7">
+                            <field name="NUM">5</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="s4d_reply" id="uFl^TXpcIIn1OOT_bS^M">
+                            <value name="CONTENT">
+                              <shadow type="text" id="QXW.4_?sfD?9kX{3Delo">
+                                <field name="TEXT">Pralaimėjai...</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <next>
+                  <block type="controls_if" id="rrr~wl%^Z$Vpi_dM=L22">
+                    <value name="IF0">
+                      <block type="logic_compare" id="eU9[Ze:dtd/ohm;)]OA2">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="variables_get" id="d/nPRZ2L!7O5~X^/|`sQ">
+                            <field name="VAR" id="A7!mFt,$a9je|v8[uyKr">gamble</field>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="math_number" id="diAi0/=E4L8Os%.rZYIm">
+                            <field name="NUM">3</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="s4d_reply" id="[,z*$g_3xnCz]:pc=}$V">
+                        <value name="CONTENT">
+                          <shadow type="text" id="T;j.qMHwejoKRFw1i_+W">
+                            <field name="TEXT">Tikiuosi laimėsi...||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _  https://tenor.com/view/gamble-gif-15817806779674278037</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="s4d_wait_seconds" id=":SGt0a`@]UYuckBA(%]z">
+                            <value name="TIME">
+                              <shadow type="math_number" id="j5vNRi+%ucOL[*{UqP=p">
+                                <field name="NUM">5</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="s4d_reply" id="{c6#{/^R7-;OD,9:R^w=">
+                                <value name="CONTENT">
+                                  <shadow type="text" id="RZ!e*#xA7{`v(?-%-o8-">
+                                    <field name="TEXT">Pralaimėjai...</field>
+                                  </shadow>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_login" id="qGt,my1$d{{zD~yo92Ms" x="1120" y="508">
+    <value name="TOKEN">
+      <shadow type="text" id="k+L6psqs_X!0^n~)bi-0">
+        <field name="TEXT">MTIyODMwOTMxODIzMTY1NDQyMQ.G5pmrV.O_TMxQVZrOaMgLmng9eS3xLpdAG5dyonJqKkxw</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="s4d_on_connected" id="A9hbcLulH`aE+K0bWd8K" x="1158" y="770">
+    <statement name="STATEMENTS">
+      <block type="frost_slash_command" id="@-oh|5JMx38~LUJrRdz4">
+        <value name="NAME">
+          <block type="jg_text_remake_paragraph_quotes" id="}CkN=fm%xTcC($PFm6?v">
+            <field name="TEXT">lošti</field>
+          </block>
+        </value>
+        <value name="DESC">
+          <block type="jg_text_remake_paragraph_quotes" id="_!)Twu{S(OLy~=|/upc/">
+            <field name="TEXT">omg</field>
+          </block>
+        </value>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_reply" id="HZ{?QkYg@WmIo(WV!O@C" disabled="true" x="22" y="865">
+    <value name="CONTENT">
+      <shadow type="text" id="7t409rj}p3Gf`/R%bwae">
+        <field name="TEXT">Tikiuosi laimėsi...||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​|| _ _ _ _ _ _  https://tenor.com/view/ga-ble-gif-1917603139337710711</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="math_arithmetic" id=")7wb5Ug`2:/fs|dnF4h`" disabled="true" x="980" y="857">
+    <field name="OP">ADD</field>
+    <value name="A">
+      <shadow type="math_number" id="r@oua8SK5(S%kn)Za=ZK">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+    <value name="B">
+      <shadow type="math_number" id="7L]dq3gvyqjh(J!k|/UN">
+        <field name="NUM">1</field>
+      </shadow>
+    </value>
+  </block>
+  <block type="lime_msg_author_attributes" id="Ls3#itn/*AUG$7DPMccL" disabled="true" x="632" y="1319">
+    <field name="TEXT">Get message author's</field>
+    <field name="dropdown">USERNAME</field>
+  </block>
+</xml>
